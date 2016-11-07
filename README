@@ -1,0 +1,31 @@
+David Qu
+
+Code written is my own except the Eigen library and main.cpp, which was originally given
+as a demo of the OpenGL API and modified to use the MultObjParser class.
+
+Note: Uses OpenGL libraries. The following commands should install
+the necessary libraries for Linux:
+
+sudo apt-get update  
+sudo apt-get install build-essential
+sudo apt-get install freeglut3  
+sudo apt-get install freeglut3-dev  
+sudo apt-get install libglew1.5  
+sudo apt-get install libglew1.5-dev  
+sudo apt-get install libglu1-mesa  
+sudo apt-get install libglu1-mesa-dev  
+sudo apt-get install libgl1-mesa-dev
+
+
+To build: run make.
+To run: ./opengl_renderer scene_bunny1.txt 800 800
+
+Any text file in the data/ directory can be rendered using
+this program.
+
+make test creates a regression test program which
+reads in a given scene, prints some test output and also 
+tests some of the Quatern operations (quaternions were used
+for representing rotation matrices).
+
+To run: ./test scene_cube1.txt
